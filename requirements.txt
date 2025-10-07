@@ -3,7 +3,6 @@ reportlab
 canvas
 A4
 ImageReader
-colors
 inch
 tempfile
 datetime
