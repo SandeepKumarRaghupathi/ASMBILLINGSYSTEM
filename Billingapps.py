@@ -44,7 +44,7 @@ with st.form("billing_form"):
 
 # ---- PDF Generation ----
 def generate_invoice(customer_name, customer_email, customer_address, items,
-                     logo_path="/Users/sandeepkumar/PycharmProjects/Web Dev/assests/CompanyLogo.png", bank_name="", account_no="", ifsc_code="", upi_id=""):
+                     logo_path="ASMLOGO.png", bank_name="", account_no="", ifsc_code="", upi_id=""):
     company_name = "ASM Civil Suppliers and Earthmovers"
     company_address = "No:11, Pulavar Nagar, Pavanar Street, Rangapuram, Vellore"
     company_contact = "+91 7708793702, +91 9944808485"
@@ -177,7 +177,7 @@ if submitted:
     if not customer_name or not any(item["name"] for item in items):
         st.error("⚠️ Please enter customer and item details.")
     else:
-        logo_path = "/Users/sandeepkumar/PycharmProjects/Web Dev/assests/CompanyLogo.png"  # uploaded image file
+        logo_path = "ASMLOGO.png"  # uploaded image file
         pdf_path, invoice_no = generate_invoice(
             customer_name,
             customer_email,
